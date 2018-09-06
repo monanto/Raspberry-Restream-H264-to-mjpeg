@@ -1,0 +1,16 @@
+[Unit]
+Description=restream service daemon
+After=network.target
+
+[Service]
+Type=simple
+PIDFile=/var/run/restream.pid
+ExecStart=/bin/bash /etc/restream/restream.sh
+ExecStop=/bin/kill -s QUIT $MAINPID
+Restart=always
+RestartSec=3
+
+
+[Install]
+WantedBy=multi-user.target
+
