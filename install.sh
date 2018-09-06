@@ -4,7 +4,7 @@ if [[ "$EUID" -ne 0 ]]; then
 	exit 2
 fi
 
-sudo apt install screen bc curl -y >/dev/null 2>&1
+sudo apt install -y >/dev/null 2>&1
 # method 1
 ffmpeg -h >/dev/null 2>&1
 if [[ $? -ne 0 ]];then
