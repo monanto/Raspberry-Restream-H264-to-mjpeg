@@ -24,9 +24,6 @@ if [[ $? -ne 0 ]];then
 		sudo apt update
 		sudo apt install ffmpeg -y
 	fi
-
-else
-	echo "ffmpeg already installed"
 fi
 echo "Installing script restream.sh"
 sudo mkdir -p /etc/restream/
