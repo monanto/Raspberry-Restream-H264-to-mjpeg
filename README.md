@@ -19,6 +19,3 @@ Stream available at http://IP_address_of_PI:8090/camera.mjpeg
 
 # License
 This project is licensed under the MIT License - see the LICENSE.md file for details
-
-# Bitcoin  
-bc1qcjftu37tjlhfvdgyv74hdesgpx9g9nezqk7685
