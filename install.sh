@@ -1,10 +1,10 @@
-#/bin/bash
+#!/bin/bash
 if [[ "$EUID" -ne 0 ]]; then
 	echo "Sorry, you need to run this as sudo"
 	exit 2
 fi
 
-sudo apt install -y >/dev/null 2>&1
+sudo apt update -y >/dev/null 2>&1
 # method 1
 ffmpeg -h >/dev/null 2>&1
 if [[ $? -ne 0 ]];then
